@@ -1,0 +1,33 @@
+<ons-page id="LoginPage" ng-controller="LoginController" ng-init="ngInit()">
+    <ons-toolbar>
+        <div class="left">
+            <span class="ons-logo"><img src="img/logo.png" alt="TABENARA"></span>
+        </div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="ion-ios-gear, material:md-settings"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div class="ons-row-custom">
+        <div class="ons-col-custom s4">&nbsp;</div>
+        <div class="ons-col-custom s4">
+            <ons-row class="m-t-40">
+                <ons-col>
+                    <ons-input placeholder="ログインID" id="id" ng-model="id" class="w100" modifier="underbar" autocapitalize="none" float></ons-input>
+                </ons-col>
+            </ons-row>
+            <ons-row class="m-t-15">
+                <ons-col>
+                    <ons-input placeholder="パスワード" id="password" ng-model="password" class="w100" type="password" modifier="underbar" autocapitalize="none" float></ons-input>
+                </ons-col>
+            </ons-row>
+            <ons-row class="m-t-15">
+                <ons-col>
+                    <ons-button modifier="large" ng-click="btnLoginClick()">ログイン</ons-button>
+                </ons-col>
+            </ons-row>
+        </div>
+    </div>
+</ons-page>

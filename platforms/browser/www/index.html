@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="TabenaraHandi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="resources/onsenui/2.7.0/css/onsenui.min.css">
+    <link rel="stylesheet" href="resources/onsenui/2.7.0/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="resources/angular/angular-1.6.6.min.js"></script>
+    <script src="resources/onsenui/2.7.0/js/onsenui.min.js"></script>
+    <script src="resources/onsenui/2.7.0/js/angular-onsenui.min.js"></script>
+    <script src="resources/jquery/jquery-3.2.1.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/LoginController.js"></script>
+</head>
+
+<body>
+    <ons-navigator id="appNavigator" var="appNavigator" page="pages/Login.html">
+    </ons-navigator>
+
+    <ons-dialog id="appProgressDialog" animation="none">
+        <div class="text-center m-t-25">
+            <ons-progress-circular indeterminate></ons-progress-circular>
+            <br /><span class="message">Processing...</span>
+        </div>
+    </ons-dialog>
+
+    <ons-alert-dialog id="appAlertDialog">
+        <div class="alert-dialog-title">Alert</div>
+        <div class="alert-dialog-content">Alert Message</div>
+        <div class="alert-dialog-footer">
+            <button class="alert-dialog-button" onclick="app.alertDialog.hide()">OK</button>
+        </div>
+    </ons-alert-dialog>
+</body>
+
+</html>
